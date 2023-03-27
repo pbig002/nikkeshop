@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intern/homePage.dart';
-import 'package:intern/loginScreen.dart';
-import '';
+import 'package:intern/page/homePage.dart';
+import 'package:intern/page/loginScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          scaffoldBackgroundColor: Color.fromARGB(255, 193, 212, 232)),
+          scaffoldBackgroundColor: Color.fromARGB(255, 239, 247, 255)),
       routes: {
         "/": (context) => LoginScreen(),
         "HomePage": (context) => HomePage(),
