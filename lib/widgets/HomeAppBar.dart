@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});
+  
+  get badges => null;
 
   @override
   Widget build(BuildContext context) {
@@ -26,20 +28,21 @@ class HomeAppBar extends StatelessWidget {
           ),
         ),
         Spacer(),
-        Badge(
-          badgeContent: Text(
-            "3",
-            style: TextStyle(color: Colors.white),
-          ),
-          child: InkWell(
-            onTap: () {},
-            child: Icon(
-              Icons.shopping_bag_outlined,
-              size: 35,
-              color: Colors.purpleAccent,
-            ),
-          ),
-        ),
+        // Badge(
+        //   badgeContent: Text(
+        //     "3",
+        //     style: TextStyle(color: Colors.white),
+        //   ),
+        //   child: InkWell(
+        //     onTap: () {},
+        //     child: Icon(
+        //       Icons.shopping_bag_outlined,
+        //       size: 35,
+        //       color: Colors.purpleAccent,
+        //     ),
+        //   ),
+        // ),
+  
       ]),
     );
   }
